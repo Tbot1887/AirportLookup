@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
+﻿/*
+ * This work is licensed under a
+ * Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+ * International License.
+ * 
+ * Learn More: https://creativecommons.org/licenses/by-nc-sa/4.0/
+ */
+using System;
 using System.Reflection;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AirportDataLookup
@@ -101,5 +103,10 @@ namespace AirportDataLookup
             }
         }
         #endregion
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

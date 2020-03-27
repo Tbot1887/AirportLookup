@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * This work is licensed under a
+ * Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+ * International License.
+ * 
+ * Learn More: https://creativecommons.org/licenses/by-nc-sa/4.0/
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +13,7 @@ using System.Device.Location;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
+using System.IO;
 
 namespace AirportDataLookup
 {
@@ -86,7 +94,7 @@ namespace AirportDataLookup
                 else
                 {
                     string message = "Invalid Region Specifier: " + value;
-                    throw new InvalidRegionException(message);
+                    throw new InvalidDataException(message);
                 }
             }
         }
@@ -107,7 +115,7 @@ namespace AirportDataLookup
                 else
                 {
                     string message = "ICAO Codes must be 4 Characters long";
-                    throw new InvalidICAO_IATA_Code(message);
+                    throw new InvalidDataException(message);
                 }
 
             }
@@ -164,7 +172,7 @@ namespace AirportDataLookup
                 else
                 {
                     string message = "IATA Codes must be 3 Characters long";
-                    throw new InvalidICAO_IATA_Code(message);
+                    throw new InvalidDataException(message);
                 }
             }
         }
@@ -183,7 +191,7 @@ namespace AirportDataLookup
                 else
                 {
                     string message = "Invalid Country Code";
-                    throw new InvalidRegionException(message);
+                    throw new InvalidDataException(message);
                 }
             }
         }

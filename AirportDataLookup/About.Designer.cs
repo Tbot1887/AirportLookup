@@ -36,8 +36,10 @@
             this.labelCompanyName = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.okButton = new System.Windows.Forms.Button();
+            this.PicBox_FreeCulture = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_FreeCulture)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel
@@ -148,6 +150,17 @@
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&OK";
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            // 
+            // PicBox_FreeCulture
+            // 
+            this.PicBox_FreeCulture.Image = global::AirportDataLookup.Properties.Resources.fc_approved_tiny;
+            this.PicBox_FreeCulture.Location = new System.Drawing.Point(363, 55);
+            this.PicBox_FreeCulture.Name = "PicBox_FreeCulture";
+            this.PicBox_FreeCulture.Size = new System.Drawing.Size(60, 60);
+            this.PicBox_FreeCulture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicBox_FreeCulture.TabIndex = 1;
+            this.PicBox_FreeCulture.TabStop = false;
             // 
             // About
             // 
@@ -155,6 +168,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 283);
+            this.Controls.Add(this.PicBox_FreeCulture);
             this.Controls.Add(this.tableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -168,6 +182,7 @@
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBox_FreeCulture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,5 +197,6 @@
         private System.Windows.Forms.Label labelCompanyName;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.PictureBox PicBox_FreeCulture;
     }
 }
