@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Computery")]
 [assembly: AssemblyProduct("Airport Lookup")]
-[assembly: AssemblyCopyright("CC BY-SA 4.0 International Licence")]
+[assembly: AssemblyCopyright("© Copyright 2020 By Computery. Some Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

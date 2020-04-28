@@ -154,7 +154,6 @@
             // 
             // PicBox_FreeCulture
             // 
-            this.PicBox_FreeCulture.Image = global::AirportDataLookup.Properties.Resources.fc_approved_tiny;
             this.PicBox_FreeCulture.Location = new System.Drawing.Point(363, 55);
             this.PicBox_FreeCulture.Name = "PicBox_FreeCulture";
             this.PicBox_FreeCulture.Size = new System.Drawing.Size(60, 60);
